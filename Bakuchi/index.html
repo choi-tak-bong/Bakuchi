@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakuchi</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #head_line {
+            color: white;
+            font-size: 30px;
+            opacity: 0;
+            position: absolute;
+            top: 15rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #head_kinds #canvas {
+            background-color: green;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            width: 100%;
+            height: 15rem;
+            transform: translate(-50%, -50%);
+        }
+
+        #settings {
+            color: white;
+            position: absolute;
+            top: 1rem;
+            right: 0%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #settings #button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false">
+    <script src="js/constants.js"></script>
+    <script src="js/startIntro.js"></script>
+    <div id="head_line"><h1>당신의 운을 시험해보세요! 여러번!</h1></div>
+    <div id="head_kinds"><canvas id="canvas"></canvas></div>
+    <div id="settings"><a id="button">환경설정</a></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
